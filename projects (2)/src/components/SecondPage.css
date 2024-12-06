@@ -1,0 +1,178 @@
+.second-page {
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.header h1 {
+  color: white;
+  
+  padding: 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 1300px;
+}
+
+/* Section buttons on the right side */
+.section-buttons {
+  position: absolute;
+  top: 140px;
+  right: 20px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduced gap between buttons */
+}
+
+/* Adjusted Button Styles */
+.add-button  {
+  padding: 5px 15px; /* Reduced padding for smaller buttons */
+  font-size: 12px; /* Adjusted font size for compactness */
+  border-radius: 6px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Prevent Overlap by Adjusting Layout */
+.weightage-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Proper spacing for slider and buttons */
+  padding: 10px 20px; /* Added padding for better alignment */
+}
+
+/* Adjust the buttons on hover */
+.add-button:hover, .remove-button:hover {
+  transform: scale(1.05); /* Slight hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Proceed button - Adjusted */
+.proceed-button {
+  padding: 10px 25px; /* Adjusted padding for better size */
+  font-size: 14px; /* Ensured consistency */
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  margin-top: 20px;
+}
+
+/* Ripple Effect on Click */
+.add-button:active, .remove-button:active, .proceed-button:active {
+  transform: scale(0.95); /* Shrinks slightly on click */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow change */
+}
+
+/* Compact Containers */
+.weightage-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.weightage-item {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hover effect for container */
+.weightage-item:hover {
+  background-color: #f0f8ff; /* Light blue background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.weightage-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  margin: 0;
+}
+
+.weightage-box {
+  width: 50px;
+  height: 25px;
+  background-color: #d9eaff;
+  color: #007bff;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.slider-container {
+  flex: 1;
+  position: relative;
+}
+
+.weightage-slider {
+  width: 98%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.slider-scale {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 98%;
+  top: 10px;
+   
+}
+
+.scale-mark {
+  text-align: center;
+}
+
+.midline {
+  width: 1px;
+  margin: auto;
+}
+
+.scale-label {
+  font-size: 10px;
+  color: #333;
+}
+
+/* Simple Remove Button */
+.remove-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px; /* Adjust size for the minus sign */
+  color: #ff0000; /* Red color for the minus sign */
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+}
+
+/* Remove button hover effect */
+.remove-button:hover {
+  color: #cc0000; /* Darker red when hovered */
+  text-decoration: none; /* No underline */
+  box-shadow: none; /* No shadow */
+}
+
+
+.total-weightage {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

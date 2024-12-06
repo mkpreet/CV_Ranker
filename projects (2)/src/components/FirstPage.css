@@ -1,0 +1,106 @@
+.first-page {
+  text-align: center;
+  padding: 2px;
+  background-color: #f9fafb; /* Subtle background color */
+}
+
+.first-header {
+  background-color: #007bff; /* Keep this as the header highlight */
+  color: #ffffff; /* Clear white text for better contrast */
+  padding: 15px; /* Slightly more padding */
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.first-weightage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Adjust gap for better spacing */
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.first-weightage-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(255, 117, 140, 0.4); /* Soft pink shadow */
+  width: 80%;
+  max-width: 400px; /* Limit maximum width */
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.first-weightage-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 15px rgba(255, 117, 140, 0.6); /* Deeper shadow on hover */
+}
+
+.first-weight-box {
+  font-weight: bold;
+  color: #ffffff; /* White text for contrast */
+  padding: 5px 12px;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black for focus */
+  border: 2px solid #ffffff; /* Clean white border */
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+
+.first-question {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #333333; /* Neutral text color */
+}
+
+.first-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add more spacing between buttons */
+  margin-bottom: 20px;
+}
+
+.first-choice-button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.first-choice-button:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+.first-choice-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.first-proceed-button {
+  padding: 12px 35px;
+  background-color: #28a745; /* Use green for success action */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.first-proceed-button:hover {
+  background-color: #218838; /* Slightly darker on hover */
+  transform: scale(1.05);
+}

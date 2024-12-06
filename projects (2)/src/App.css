@@ -1,0 +1,25 @@
+.page {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.section {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
