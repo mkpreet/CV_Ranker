@@ -8,35 +8,36 @@ import json
 import time
 
 
-# client = pymongo.MongoClient(
-#     "mongodb+srv://backenddatabase2:Duj2B959bdr24pwB@cluster0.kmyon.mongodb.net/Applicant?retryWrites=true&w=majority&appName=Cluster0"
-# )
+client = pymongo.MongoClient(
+    "mongodb+srv://backenddatabase2:Duj2B959bdr24pwB@cluster0.kmyon.mongodb.net/Applicant?retryWrites=true&w=majority&appName=Cluster0"
+)
 
-# # Database and Collection
-# db = client["Applicant"]
-# col = db["applicants"]
+# Database and Collection
+db = client["Applicant"]
+col = db["applicants"]
 
-# # Fetch all documents
-# #documents = col.find()
-# documents = col.find()
-# # Convert MongoDB documents to a list of dictionaries
-# # data_list = [doc for doc in documents]
-# # for doc in documents:
-# #     data_list=doc
-
+# Fetch all documents
+#documents = col.find()
+documents = col.find()
+# Convert MongoDB documents to a list of dictionaries
 # data_list = [doc for doc in documents]
+# for doc in documents:
+#     data_list=doc
 
-# # for idx, doc in enumerate(documents):
-# #     data_list.append(doc)
-# #     if idx == 1:  # After the second iteration (0-based index)
-# #         break
+data_list = [doc for doc in documents]
 
-# # File to save the data
-# file_name = "CV.json"
+# for idx, doc in enumerate(documents):
+#     data_list.append(doc)
+#     if idx == 1:  # After the second iteration (0-based index)
+#         break
 
-# # Write to JSON file
-# with open(file_name, "w") as json_file:
-#     json.dump(data_list, json_file, indent=4, default=str)
+# File to save the data
+file_name = "CV.json"
+
+# Write to JSON file
+with open(file_name, "w") as json_file:
+    json.dump(data_list, json_file, indent=4, default=str)
+
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 roberta_model = SentenceTransformer('roberta-base-nli-stsb-mean-tokens', cache_folder=os.path.join(os.getcwd(), 'embedding')).to(device)
