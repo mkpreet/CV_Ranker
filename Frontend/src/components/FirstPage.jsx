@@ -4,7 +4,7 @@ import "./FirstPage.css";
 
 const FirstPage = ({ saveWeights }) => {
   const navigate = useNavigate();
-  const defaultWeights = { skills: 35, workExperience: 35, education: 30 };
+  const defaultWeights = { skills: 35, experience: 35, education: 30 };
   const [choice, setChoice] = useState(null); // Tracks if "Yes" or "No" is selected
 
   const handleChoice = (selectedChoice) => {

@@ -1,0 +1,46 @@
+{
+    "_id": "675bbf1aec7ee931f4f89f9c",
+    "jobTitle": "Senior Software Engineer",
+    "noOfVacancies": "5",
+    "collegeCategory": "Computer Science",
+    "aboutCompany": "TechCorp is a leading technology company that specializes in providing innovative software",
+    "companyName": "TechCorp Innovations",
+    "jobLocation": "San Francisco, California",
+    "availability": null,
+    "salaryRange": "$120,000 - $150,000 per annum",
+    "salaryType": null,
+    "essentialQualification": "Bachelor's degree in Computer Science or related field.",
+    "hardSkills": [
+        "Java"
+    ],
+    "softSkills": [
+        "Strong communication"
+    ],
+    "domain": null,
+    "workMode": null,
+    "modeOfEmployment": null,
+    "rolesAndResponsibilities": [
+        "Design and implement software solutions for enterprise clients."
+    ],
+    "perksAndBenefits": [
+        "Health insurance"
+    ],
+    "levelOfRole": null,
+    "preferredQualification": "Master\u2019s degree in Computer Science or related field.",
+    "salaryCurrency": "USD",
+    "overallExperience": "5-7 years of experience in software development.",
+    "relevantExperience": "At least 3 years of experience working with microservices and cloud-based solutions.",
+    "jobDescriptionSummary": "We are looking for an experienced Senior Software Engineer to join our dynamic team at",
+    "experienceSkills": [
+        "Microservices architecture"
+    ],
+    "preferredSkills": [
+        "DevOps tools"
+    ],
+    "applicantsSegments": {
+        "skills": []
+    },
+    "createdAt": "2024-12-13 04:59:06.494000",
+    "updatedAt": "2024-12-13 04:59:06.494000",
+    "__v": 0
+}

@@ -6,7 +6,7 @@ const SecondPage = ({ saveWeights }) => {
   const navigate = useNavigate();
 
   const sectionsList = [
-    "hardSkills",
+    "skills",
     "experience",
     "education",
     "project",
@@ -19,12 +19,13 @@ const SecondPage = ({ saveWeights }) => {
     "researchPapers",
     "portfolio",
   ];
+  
 
   const [sections, setSections] = useState(
     Object.fromEntries(
       sectionsList.map((section) => [
         section,
-        ["hardSkills", "experience", "education"].includes(section),
+        ["skills", "experience", "education"].includes(section),
       ])
     )
   );
@@ -33,7 +34,7 @@ const SecondPage = ({ saveWeights }) => {
     Object.fromEntries(
       sectionsList.map((section) => [
         section,
-        ["hardSkills", "experience", "education"].includes(section) ? 0 : 0,
+        ["skills", "experience", "education"].includes(section) ? 0 : 0,
       ])
     )
   );

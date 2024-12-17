@@ -31,11 +31,14 @@ documents2=jddata.find()
 data_list = [doc for doc in documents]
 
 #jd_data
-data_list2=[]
+#data_list2=[]
 for idx, doc in enumerate(documents2):
-    data_list2.append(doc)
-    if idx == 0:  # After the second iteration (0-based index)
-        break
+    # data_list2.append(doc)
+    # if idx == 0:  # After the second iteration (0-based index)
+    #     break
+    idx
+    
+data=doc
 
 # File to save the data
 file_name = "cvdata.json"
@@ -47,7 +50,7 @@ with open(file_name, "w") as json_file:
 
 
 with open(file_name2, "w") as json_file:
-    json.dump(data_list2, json_file, indent=4, default=str)
+    json.dump(data, json_file, indent=4, default=str)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 roberta_model = SentenceTransformer('roberta-base-nli-stsb-mean-tokens', cache_folder=os.path.join(os.getcwd(), 'embedding')).to(device)
@@ -155,25 +158,46 @@ cv_embeddings_file = 'cv_embeddings.npy'
 
 
 if not os.path.exists(jd_embeddings_file):
-    # save_embeddings(jd_texts, jd_embeddings_file)
-    jd_embeddings_list=[save_embeddings(jd,'jd_embeddings.npy') for jd in jd_texts]
+    save_embeddings(jd_texts, jd_embeddings_file)
+    
     
 
-if not os.path.exists(cv_embeddings_file):
-    cv_embeddings_list = [save_embeddings(cv, f'cv_embeddings_{idx}.npy') for idx, cv in enumerate(cv_texts)]
+# if not os.path.exists(cv_embeddings_file):
+#     cv_embeddings_list = [save_embeddings(cv, f'cv_embeddings_{idx}.npy') for idx, cv in enumerate(cv_texts)]
 
+
+
+
+embeddings_folder = "cv_embeddings"
+
+# # Create the folder if it doesn't exist
+os.makedirs(embeddings_folder, exist_ok=True)
+
+# Save CV embeddings in the specified folder
+if not os.path.exists(cv_embeddings_file):
+    cv_embeddings_list = [
+        save_embeddings(cv, os.path.join(embeddings_folder, f'cv_embeddings_{idx}.npy'))
+        for idx, cv in enumerate(cv_texts)
+    ]
     
 
 # Load precomputed embeddings
 start=time.time()
-# jd_embeddings = load_embeddings(jd_embeddings_file)
-jd_embeddings_list = [load_embeddings('jd_embeddings.npy')for _ in jd_texts]
+jd_embeddings = load_embeddings(jd_embeddings_file)
+
 #print(jd_embeddings)
 end=time.time()
 
 
 
-cv_embeddings_list = [load_embeddings(f'cv_embeddings_{idx}.npy') for idx, _ in enumerate(cv_texts)]
+
+
+# cv_embeddings_list = [load_embeddings(f'cv_embeddings_{idx}.npy') for idx, _ in enumerate(cv_texts)]
+
+cv_embeddings_list = [
+    load_embeddings(os.path.join(embeddings_folder, f'cv_embeddings_{idx}.npy'))
+    for idx, _ in enumerate(cv_texts)
+]
 
 def weighted_cosine_similarity(jd_embeddings, cv_embeddings, weights):
     total_score = 0.0
@@ -196,39 +220,39 @@ def print_score(weights):
 
     scores = []
     start2=time.time()
-    for jd_embeddings in jd_embeddings_list:
-        for idx, cv_embeddings in enumerate(cv_embeddings_list):
-            #print(cv_embeddings)
-            match_score = weighted_cosine_similarity(jd_embeddings, cv_embeddings, weights)
-            scores.append((first_names[idx], float(match_score)))
-            end2=time.time()
-            # cv_embeddings = {component: embedding(text) for component, text in cv.items()}
-            # cv_embeddings_list.append(cv_embeddings) 
+    
+    for idx, cv_embeddings in enumerate(cv_embeddings_list):
+        #print(cv_embeddings)
+        match_score = weighted_cosine_similarity(jd_embeddings, cv_embeddings, weights)
+        scores.append((first_names[idx], float(match_score/100)))
+        end2=time.time()
+        # cv_embeddings = {component: embedding(text) for component, text in cv.items()}
+        # cv_embeddings_list.append(cv_embeddings) 
 
-            # match_score = weighted_cosine_similarity(jd_embeddings, cv_embeddings, weights)
-            # scores.append((f"Applicant {idx + 1}", float(match_score)))
+        # match_score = weighted_cosine_similarity(jd_embeddings, cv_embeddings, weights)
+        # scores.append((f"Applicant {idx + 1}", float(match_score)))
 
-        scores.sort(key=lambda x: x[1], reverse=True)
+    scores.sort(key=lambda x: x[1], reverse=True)
 
-        print("\nMatch Scores:")
-        for cv_id, score in scores:
-            print(f"{cv_id} Match Score: {score:.4f}")
-        return scores
+    print("\nMatch Scores:")
+    for cv_id, score in scores:
+        print(f"{cv_id} Match Score: {score:.4f}")
+    return scores
 
 
 # weights = {
-#     "skills":0.35,
-#     "experience": 0.35,
-#     "education": 0.30,
-#     "project": 0.0,
-#     "courses": 0.0,
-#     "certificates": 0,
-#     "languages": 0,
-#     "awards": 0,
-#     "achievement":0,
-#     "internships":0,
-#     "researchPapers":0,
-#     "portfolio":0,
+#     "skills":35,
+#     "experience": 35,
+#     "education": 30,
+# #     # "project": 0.0,
+# #     # "courses": 0.0,
+# #     # "certificates": 0,
+# #     # "languages": 0,
+# #     # "awards": 0,
+# #     # "achievement":0,
+# #     # "internships":0,
+# #     # "researchPapers":0,
+# #     # "portfolio":0,
 #  }
 
 # print_score(weights)

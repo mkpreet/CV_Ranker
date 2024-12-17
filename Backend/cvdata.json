@@ -1,0 +1,545 @@
+[
+    {
+        "_id": "67541389f1b31eb971dc5147",
+        "skills": {
+            "hardSkills": [
+                {
+                    "_id": "67541481f1b31eb971dc5158",
+                    "skill": "JavaScript",
+                    "years": "1"
+                },
+                {
+                    "_id": "67580766e1c8bb0b2d0f9134",
+                    "skill": "JavaScript",
+                    "years": "4"
+                }
+            ],
+            "softSkills": [
+                {
+                    "_id": "67541481f1b31eb971dc5157",
+                    "skill": "React.js",
+                    "years": "1"
+                },
+                {
+                    "_id": "67580766e1c8bb0b2d0f9133",
+                    "skill": "React.js",
+                    "years": "4"
+                }
+            ]
+        },
+        "firstName": "Md Nurul",
+        "lastName": "Islam",
+        "email": "mdnuruli579@gmail.com",
+        "phone": "9801502290",
+        "location": {
+            "country": "India",
+            "state": "Bihar",
+            "city": "Jamui"
+        },
+        "password": "N20121820i@",
+        "education": [
+            {
+                "institution": "Kavian",
+                "degree": "",
+                "specialization": "",
+                "cgpa": null,
+                "percentage": 70,
+                "_id": "675413d9f1b31eb971dc514a",
+                "level": "10th",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-01",
+                "endDate": "2024-12-24",
+                "isPursuing": false
+            },
+            {
+                "institution": "Navodya",
+                "degree": "",
+                "specialization": "",
+                "cgpa": null,
+                "percentage": 79.99,
+                "_id": "675413d9f1b31eb971dc514b",
+                "level": "12th",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-01",
+                "endDate": "2024-12-31",
+                "isPursuing": false
+            },
+            {
+                "institution": "IIT Bombay",
+                "degree": "BTech",
+                "specialization": "CS",
+                "cgpa": null,
+                "percentage": 80,
+                "_id": "675413d9f1b31eb971dc514c",
+                "level": "UG",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-01",
+                "endDate": "2024-12-31",
+                "isPursuing": false
+            },
+            {
+                "institution": "Kavian",
+                "degree": "",
+                "specialization": "",
+                "cgpa": null,
+                "percentage": 80,
+                "_id": "675806f8e1c8bb0b2d0f911a",
+                "level": "10th",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-10",
+                "endDate": "2024-12-31",
+                "isPursuing": false
+            },
+            {
+                "institution": "Delhi Public School (DPS)",
+                "degree": "",
+                "specialization": "",
+                "cgpa": null,
+                "percentage": 70,
+                "_id": "675806f8e1c8bb0b2d0f911b",
+                "level": "12th",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-11",
+                "endDate": "2024-12-30",
+                "isPursuing": false
+            },
+            {
+                "institution": "IIT Kharagpur",
+                "degree": "BTech",
+                "specialization": "CS",
+                "cgpa": null,
+                "percentage": 69.99,
+                "_id": "675806f8e1c8bb0b2d0f911c",
+                "level": "UG",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-17",
+                "endDate": "2024-12-26",
+                "isPursuing": false
+            }
+        ],
+        "experience": [
+            {
+                "skills": [],
+                "_id": "67541460f1b31eb971dc5151",
+                "experiences": [],
+                "projects": {
+                    "projectTitle": "Testing",
+                    "objective": "Testing",
+                    "toolsTechnologies": "",
+                    "duration": "",
+                    "outcome": "",
+                    "url": "http://localhost:8080"
+                }
+            },
+            {
+                "skills": [],
+                "_id": "67580750e1c8bb0b2d0f9127",
+                "experiences": [],
+                "projects": {
+                    "projectList": []
+                }
+            }
+        ],
+        "__v": 0,
+        "profilePicture": "https://res.cloudinary.com/dfnxcomj6/image/upload/v1733563191/profile-pics/1733563273296-image.jpg",
+        "certificates": [
+            {
+                "WorkExperience": [
+                    {
+                        "certificationName": "ISO JAVa",
+                        "issuingAuthority": "Oracle",
+                        "dateOfCompletion": "2024-12-01",
+                        "validityPeriod": "2",
+                        "credentialID": "789654",
+                        "url": "www.oracle.com"
+                    }
+                ]
+            },
+            {
+                "WorkExperience": [
+                    {
+                        "certificationName": "JavaISO",
+                        "issuingAuthority": "Oracle",
+                        "dateOfCompletion": "2024-12-10",
+                        "validityPeriod": "2",
+                        "credentialID": "fdsfsaa",
+                        "url": "sdfsdfd"
+                    }
+                ]
+            }
+        ],
+        "domain_intrest": {
+            "InterestDomain": []
+        },
+        "experties_area": {
+            "Area_of_Expertise": {
+                "specializedFields": [
+                    "Cloud Computing",
+                    "Cybersecurity",
+                    "Machine Learning",
+                    "AI"
+                ],
+                "industrySpecificKnowledge": ""
+            }
+        },
+        "language": [
+            {
+                "Languages": {
+                    "languages": [
+                        {
+                            "name": "English",
+                            "proficiency": "Intermediate"
+                        }
+                    ],
+                    "newLanguage": "",
+                    "newProficiency": ""
+                }
+            },
+            {
+                "Languages": {
+                    "languages": [
+                        {
+                            "name": "English",
+                            "proficiency": "Intermediate"
+                        }
+                    ],
+                    "newLanguage": "",
+                    "newProficiency": ""
+                }
+            }
+        ],
+        "hobbie": {
+            "Hobbies": {
+                "creativeHobbies": "",
+                "recreationalActivities": "",
+                "sportsFitnessActivities": [
+                    "Yoga",
+                    "Running",
+                    "Swimming"
+                ]
+            }
+        },
+        "cv": "https://res.cloudinary.com/dfnxcomj6/raw/upload/v1733822351/cvs/1733822429495-Resume_Nurul_Rakuten",
+        "reference": [
+            {
+                "Reference": {
+                    "formData": {
+                        "refereeName": "",
+                        "designation": "",
+                        "organization": "",
+                        "contactDetails": "",
+                        "relationship": ""
+                    },
+                    "PhoneNumber": "",
+                    "email": ""
+                }
+            }
+        ]
+    },
+    {
+        "_id": "675802a5e1c8bb0b2d0f9104",
+        "skills": {
+            "hardSkills": [],
+            "softSkills": []
+        },
+        "firstName": "Md Nurul",
+        "lastName": "Islam",
+        "email": "mdnuruli5@gmail.com",
+        "phone": "9801502290",
+        "location": {
+            "country": "India",
+            "state": "Bihar",
+            "city": "jamui"
+        },
+        "password": "N20121820i@",
+        "education": [],
+        "experience": [],
+        "__v": 0
+    },
+    {
+        "_id": "675802d3e1c8bb0b2d0f9108",
+        "skills": {
+            "hardSkills": [],
+            "softSkills": []
+        },
+        "firstName": "Md Nurul",
+        "lastName": "Islam",
+        "email": "mdnuru@gmail.com",
+        "phone": "9801502290",
+        "location": {
+            "country": "India",
+            "state": "Bihar",
+            "city": "jamui"
+        },
+        "password": "N20121820i@",
+        "education": [],
+        "experience": [],
+        "__v": 0
+    },
+    {
+        "_id": "675806b5e1c8bb0b2d0f9117",
+        "skills": {
+            "hardSkills": [],
+            "softSkills": []
+        },
+        "firstName": "Md Nurul",
+        "lastName": "Islam",
+        "email": "mdnurul456@gmail.com",
+        "phone": "9801502290",
+        "location": {
+            "country": "India",
+            "state": "Bihar",
+            "city": "Jamui"
+        },
+        "password": "N20121820i@",
+        "education": [],
+        "experience": [],
+        "__v": 0
+    },
+    {
+        "_id": "675ab76f556235e8374ee7bd",
+        "skills": {
+            "hardSkills": [
+                {
+                    "_id": "675ab883556235e8374ee7cf",
+                    "skill": "HTML",
+                    "years": "2"
+                },
+                {
+                    "_id": "675ab883556235e8374ee7d0",
+                    "skill": "React.js",
+                    "years": "2"
+                }
+            ],
+            "softSkills": [
+                {
+                    "_id": "675ab883556235e8374ee7ce",
+                    "skill": "Communication",
+                    "years": "1"
+                }
+            ]
+        },
+        "firstName": "Nurul",
+        "lastName": "Islam",
+        "email": "testingplatform@gmail.com",
+        "phone": "9801502290",
+        "location": {
+            "country": "India",
+            "state": "Bihar",
+            "city": "jamui"
+        },
+        "password": "N20121820i@",
+        "education": [
+            {
+                "institution": "Navodya",
+                "degree": "",
+                "specialization": "",
+                "cgpa": null,
+                "percentage": 79.96,
+                "_id": "675ab7cb556235e8374ee7c1",
+                "level": "10th",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-12",
+                "endDate": "2024-12-27",
+                "isPursuing": false
+            },
+            {
+                "institution": "Delhi Public School (DPS)",
+                "degree": "",
+                "specialization": "",
+                "cgpa": null,
+                "percentage": 69.96,
+                "_id": "675ab7cb556235e8374ee7c2",
+                "level": "12th",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-11",
+                "endDate": "2024-12-27",
+                "isPursuing": false
+            },
+            {
+                "institution": "IIT Kanpur",
+                "degree": "BCA",
+                "specialization": "CS",
+                "cgpa": null,
+                "percentage": 80,
+                "_id": "675ab7cb556235e8374ee7c3",
+                "level": "UG",
+                "gradingSystem": "percentage",
+                "certificate": null,
+                "startDate": "2024-12-14",
+                "endDate": "2024-12-18",
+                "isPursuing": false
+            }
+        ],
+        "experience": [
+            {
+                "skills": [],
+                "_id": "675ab860556235e8374ee7c8",
+                "experiences": [],
+                "projects": {
+                    "projectList": []
+                }
+            }
+        ],
+        "__v": 0,
+        "domain_intrest": {
+            "InterestDomain": []
+        },
+        "certificates": [
+            {
+                "WorkExperience": [
+                    {
+                        "certificationName": "JAVAISO",
+                        "issuingAuthority": "Oracle",
+                        "dateOfCompletion": "2024-12-02",
+                        "validityPeriod": "2",
+                        "credentialID": "",
+                        "url": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "676104f764db2cfcbb2336d3",
+        "skills": {
+            "hardSkills": [
+                {
+                    "_id": "6761065264db2cfcbb2336e5",
+                    "skill": "SQL",
+                    "years": "5"
+                }
+            ],
+            "softSkills": [
+                {
+                    "_id": "6761065264db2cfcbb2336e3",
+                    "skill": "Java",
+                    "years": "3"
+                },
+                {
+                    "_id": "6761065264db2cfcbb2336e4",
+                    "skill": "React.js",
+                    "years": "2"
+                }
+            ]
+        },
+        "firstName": "manpreet",
+        "lastName": "kaur",
+        "email": "mkpreet@gmail.com",
+        "phone": "8360808897",
+        "location": {
+            "country": "India",
+            "state": "Punjab",
+            "city": "Hoshiarpur"
+        },
+        "password": "mani@111",
+        "education": [
+            {
+                "institution": "Delhi Public School (DPS)",
+                "degree": "",
+                "specialization": "",
+                "cgpa": 7,
+                "percentage": null,
+                "_id": "6761057064db2cfcbb2336d6",
+                "level": "10th",
+                "gradingSystem": "cgpa",
+                "certificate": null,
+                "startDate": "2024-12-17",
+                "endDate": "2024-12-18",
+                "isPursuing": false
+            },
+            {
+                "institution": "The Doon School",
+                "degree": "",
+                "specialization": "",
+                "cgpa": 7,
+                "percentage": null,
+                "_id": "6761057064db2cfcbb2336d7",
+                "level": "12th",
+                "gradingSystem": "cgpa",
+                "certificate": null,
+                "startDate": "2024-12-19",
+                "endDate": "2024-12-20",
+                "isPursuing": false
+            },
+            {
+                "institution": "Guru nanak",
+                "degree": "BTech",
+                "specialization": "CS",
+                "cgpa": 8,
+                "percentage": null,
+                "_id": "6761057064db2cfcbb2336d8",
+                "level": "UG",
+                "gradingSystem": "cgpa",
+                "certificate": null,
+                "startDate": "2024-12-18",
+                "endDate": "2024-12-19",
+                "isPursuing": false
+            }
+        ],
+        "experience": [
+            {
+                "skills": [],
+                "_id": "676105c764db2cfcbb2336dd",
+                "experiences": [],
+                "projects": {
+                    "projectList": []
+                }
+            }
+        ],
+        "__v": 0,
+        "certificates": [
+            {
+                "WorkExperience": [
+                    {
+                        "certificationName": "aws",
+                        "issuingAuthority": "aws",
+                        "dateOfCompletion": "2024-12-19",
+                        "validityPeriod": "",
+                        "credentialID": "",
+                        "url": ""
+                    }
+                ]
+            }
+        ],
+        "project": [
+            {
+                "Projects": {
+                    "projectTitle": "",
+                    "objective": "",
+                    "toolsTechnologies": "",
+                    "duration": "",
+                    "outcome": "",
+                    "url": "http://localhost:8080"
+                }
+            }
+        ],
+        "language": [
+            {
+                "Languages": {
+                    "languages": [],
+                    "newLanguage": "English",
+                    "newProficiency": "Intermediate"
+                }
+            }
+        ],
+        "hobbie": {
+            "Hobbies": {
+                "creativeHobbies": "",
+                "recreationalActivities": "",
+                "sportsFitnessActivities": [
+                    "Yoga",
+                    "Running"
+                ]
+            }
+        }
+    }
+]
